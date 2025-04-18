@@ -1,0 +1,7 @@
+[Added Associations]
+image/png=imv.desktop;
+image/jpeg=imv.desktop;
+text/plain=userapp-nano-TQ4142.desktop;
+
+[Default Applications]
+text/plain=userapp-nano-TQ4142.desktop
