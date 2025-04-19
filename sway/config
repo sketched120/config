@@ -182,8 +182,6 @@ default_border pixel 1     # or normal if you want classic borders
 default_floating_border pixel
 
 
-for_window [app_id="alacritty"] border normal 2
-
 for_window [app_id=".*"] border pixel 1
 
 #for_window [app_id="org.prismlauncher.PrismLauncher"] border none
@@ -281,7 +279,8 @@ shadow_color #000000CC
 default_dim_inactive 0.2
 for_window [class="URxvt"] dim_inactive 0.1
 
-
+gaps inner 4
+gaps outer 4
 
 
 
