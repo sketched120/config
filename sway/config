@@ -178,13 +178,13 @@ input type:pointer {
     # If there are multiple scratchpad windows, this command cycles through them.
     bindsym $mod+minus scratchpad show 
     
-default_border pixel 2     # or normal if you want classic borders
+default_border pixel 1     # or normal if you want classic borders
 default_floating_border pixel
 
 
 for_window [app_id="alacritty"] border normal 2
 
-for_window [app_id=".*"] border pixel 2
+for_window [app_id=".*"] border pixel 1
 
 #for_window [app_id="org.prismlauncher.PrismLauncher"] border none
 #for_window [app_id="org.vinegarhq.Sober"] border none
@@ -237,7 +237,6 @@ bindsym $mod+r mode "resize"
 # Read `man 5 sway-bar` for more information about this section.
 bar {
 	position top
-
     # When the status_command prints a new line to stdout, swaybar updates.
     # The default just shows the current date and time.
     status_command ~/.config/sway/status_command.sh
@@ -250,13 +249,7 @@ bar {
           
     }
 }
-# color 
-# Apply dark orange borders specifically to Alacritty windows
-for_window [class="Alacritty"] border pixel 2
-for_window [class="Alacritty"] client.focused          #8A3324 #8A3324 #FFFFFF #8A3324 #8A3324
-for_window [class="Alacritty"] client.focused_inactive #8A3324 #8A3324 #BBBBBB #8A3324 #8A3324
-for_window [class="Alacritty"] client.unfocused        #8A3324 #8A3324 #888888 #8A3324 #8A3324
-for_window [class="Alacritty"] client.urgent           #8B4000 #8B4000 #FFFFFF #8B4000 #8B4000
+
 
 
 
@@ -278,13 +271,13 @@ for_window [app_id="org.prismlauncher.PrismLauncher"] {
     blur_xray enable
 }
 
-corner_radius 8
+corner_radius 10
 smart_corner_radius off
 
 shadows enable
 shadow_blur_radius 2
-shadow_color #000000CC
 
+shadow_color #000000CC
 default_dim_inactive 0.2
 for_window [class="URxvt"] dim_inactive 0.1
 
