@@ -3,6 +3,8 @@
 # Copy this to ~/.config/sway/config and edit it to your liking.
 #
 # Read `man 5 sway` for a complete reference.
+exec_always discord
+exec_always /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 
 exec_always gammastep -O 5100K
 
 ### Variables
@@ -266,7 +268,6 @@ for_window [class="Alacritty"] {
 
 for_window [app_id="org.prismlauncher.PrismLauncher"] {
     blur enable
-    blur_xray enable
 }
 
 corner_radius 10
